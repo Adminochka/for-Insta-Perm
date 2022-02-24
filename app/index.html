@@ -19,110 +19,129 @@
                     <div class="logo">
                         Company
                     </div>
-                    <nav class="menu">
-                        <ul class="menu__list">
-                            <ul class="menu__list-item">
-                                <a class="menu__list-link" href="#">Products</a>
-                            </ul>
-                            <ul class="menu__list-item">
-                                <a class="menu__list-link" href="#">Prices</a>
-                            </ul>
-                            <ul class="menu__list-item">
-                                <a class="menu__list-link" href="#">Security</a>
-                            </ul>
-                            <ul class="menu__list-item menu__dropdown-position">
-                                <a tabindex="1" class="menu__list-link menu__list-arrow menu__list-link--active" href="#">Resources</a>
-                                <div class="menu__dropdown-inner">
-                                    <ul class="menu__dropdown">
-                                        <ul class="menu__dropdown-item">
-                                            <a class="menu__dropdown-link" href="#">About</a>
-                                            <p class="menu__dropdown-text">
-                                                We aim to continuously refine our services in highly dynamic industry.
-                                            </p>
-                                        </ul>
-                                        <ul class="menu__dropdown-item">
-                                            <a class="menu__dropdown-link" href="#">Careers</a>
-                                            <p class="menu__dropdown-text">
-                                                Come join our team and us build the future.
-                                            </p>
-                                        </ul>
-                                        <ul class="menu__dropdown-item">
-                                            <a class="menu__dropdown-link" href="#">Support</a>
-                                            <p class="menu__dropdown-text">
-                                                Answers to FAQs and how to contact our customer service team.
-                                            </p>
-                                        </ul>
-                                        <ul class="menu__dropdown-item">
-                                            <a class="menu__dropdown-link" href="#">Blog</a>
-                                            <p class="menu__dropdown-text">
-                                                Aroduct announcements, company updates, and industry perspectives.
-                                            </p>
-                                        </ul>
-                                    </ul>
-                                </div>
-                            </ul>
-                        </ul>
-                    </nav>
-                    <div class="user-nav">
-                        <a class="user-nav__log" href="#">Log in</a>
-                        <div class="user-nav__language user-nav__language--active"> English
-                            <div class="user-nav__language-inner">
-                                <ul class="user-nav__language-list">
-                                    <li class="user-nav__language-item">
-                                        <span class="user-nav__language-link user-nav__language-link--disabled" href="#">English</ы>
-                                    </li>
-                                    <li class="user-nav__language-item">
-                                        <a class="user-nav__language-link" href="#">Text</a>
-                                    </li>
-                                    <li class="user-nav__language-item">
-                                        <a class="user-nav__language-link" href="#">Text</a>
-                                    </li>
-                                    <li class="user-nav__language-item">
-                                        <a class="user-nav__language-link" href="#">Text</a>
-                                    </li>
-                                    <li class="user-nav__language-item">
-                                        <a class="user-nav__language-link" href="#">Text</a>
-                                    </li>
-                                    <li class="user-nav__language-item">
-                                        <a class="user-nav__language-link user-nav__language-link--active" href="#">English</a>
-                                    </li>
-                                    <li class="user-nav__language-item">
-                                        <a class="user-nav__language-link" href="#">Text</a>
-                                    </li>
-                                    <li class="user-nav__language-item">
-                                        <a class="user-nav__language-link" href="#">Text</a>
-                                    </li>
-                                    <li class="user-nav__language-item">
-                                        <a class="user-nav__language-link" href="#">Text</a>
-                                    </li>
-                                    <li class="user-nav__language-item">
-                                        <a class="user-nav__language-link" href="#">Text</a>
-                                    </li>
-                                    <li class="user-nav__language-item">
-                                        <a class="user-nav__language-link" href="#">Text</a>
-                                    </li>
-                                    <li class="user-nav__language-item">
-                                        <a class="user-nav__language-link" href="#">Text</a>
-                                    </li>
-                                    <li class="user-nav__language-item">
-                                        <a class="user-nav__language-link" href="#">Text</a>
-                                    </li>
-                                    <li class="user-nav__language-item">
-                                        <a class="user-nav__language-link" href="#">Text</a>
-                                    </li>
-                                    <li class="user-nav__language-item">
-                                        <a class="user-nav__language-link" href="#">Text</a>
-                                    </li>
-                                </ul>
-                            </div>
+                    <input type="checkbox" id="header-menu-check">
+                    <label for="header-menu-check">
+                        <div class="header__menu-icon">
+                            <span class="header__menu-line"></span>
                         </div>
-                        <form class="user-nav__search-inner">
-                            <a class="user-nav__search-icon user-nav__search-icon--active" href="#"></a>
-                            <div class="user-nav__search">
-                                <input class="user-nav__search-input" type="text" placeholder="Search">
-                                <button class="user-nav__search-btn"></button>
+                    </label>
+                    <div class="header__menu-inner">
+                        <nav class="menu">
+                            <ul class="menu__list">
+                                <ul class="menu__list-item">
+                                    <a class="menu__list-link" href="#">Products</a>
+                                </ul>
+                                <ul class="menu__list-item">
+                                    <a class="menu__list-link" href="#">Prices</a>
+                                </ul>
+                                <ul class="menu__list-item">
+                                    <a class="menu__list-link" href="#">Security</a>
+                                </ul>
+                                <ul class="menu__list-item menu__dropdown-position">
+                                    <label>
+                                        <input type="checkbox" id="menu-dropdown-check">
+                                        <span class="menu__list-link menu__list-arrow">Resources</span>
+                                        <div class="menu__dropdown-inner">
+                                            <ul class="menu__dropdown">
+                                                <ul class="menu__dropdown-item">
+                                                    <a class="menu__dropdown-link" href="#">About</a>
+                                                    <p class="menu__dropdown-text">
+                                                        We aim to continuously refine our services in highly dynamic industry.
+                                                    </p>
+                                                </ul>
+                                                <ul class="menu__dropdown-item">
+                                                    <a class="menu__dropdown-link" href="#">Careers</a>
+                                                    <p class="menu__dropdown-text">
+                                                        Come join our team and us build the future.
+                                                    </p>
+                                                </ul>
+                                                <ul class="menu__dropdown-item">
+                                                    <a class="menu__dropdown-link" href="#">Support</a>
+                                                    <p class="menu__dropdown-text">
+                                                        Answers to FAQs and how to contact our customer service team.
+                                                    </p>
+                                                </ul>
+                                                <ul class="menu__dropdown-item">
+                                                    <a class="menu__dropdown-link" href="#">Blog</a>
+                                                    <p class="menu__dropdown-text">
+                                                        Aroduct announcements, company updates, and industry perspectives.
+                                                    </p>
+                                                </ul>
+                                            </ul>
+                                        </div>
+                                    </label>
+                                </ul>
+                            </ul>
+                        </nav>
+                        <div class="user-nav">
+                            <a class="user-nav__log" href="#">Log in</a>
+                            <div class="user-nav__language-position">
+                                <label>
+                                    <input type="checkbox" id="language-check">
+                                    <div class="user-nav__language"> English
+                                    </div>
+                                    <div class="user-nav__language-inner">
+                                        <ul class="user-nav__language-list">
+                                            <li class="user-nav__language-item">
+                                                <span class=" user-nav__language-link--disabled" href="#">English</ы>
+                                            </li>
+                                            <li class="user-nav__language-item">
+                                                <a class="user-nav__language-link" href="#">Text</a>
+                                            </li>
+                                            <li class="user-nav__language-item">
+                                                <a class="user-nav__language-link" href="#">Text</a>
+                                            </li>
+                                            <li class="user-nav__language-item">
+                                                <a class="user-nav__language-link" href="#">Text</a>
+                                            </li>
+                                            <li class="user-nav__language-item">
+                                                <a class="user-nav__language-link" href="#">Text</a>
+                                            </li>
+                                            <li class="user-nav__language-item">
+                                                <a class="user-nav__language-link user-nav__language-link--active" href="#">English</a>
+                                            </li>
+                                            <li class="user-nav__language-item">
+                                                <a class="user-nav__language-link" href="#">Text</a>
+                                            </li>
+                                            <li class="user-nav__language-item">
+                                                <a class="user-nav__language-link" href="#">Text</a>
+                                            </li>
+                                            <li class="user-nav__language-item">
+                                                <a class="user-nav__language-link" href="#">Text</a>
+                                            </li>
+                                            <li class="user-nav__language-item">
+                                                <a class="user-nav__language-link" href="#">Text</a>
+                                            </li>
+                                            <li class="user-nav__language-item">
+                                                <a class="user-nav__language-link" href="#">Text</a>
+                                            </li>
+                                            <li class="user-nav__language-item">
+                                                <a class="user-nav__language-link" href="#">Text</a>
+                                            </li>
+                                            <li class="user-nav__language-item">
+                                                <a class="user-nav__language-link" href="#">Text</a>
+                                            </li>
+                                            <li class="user-nav__language-item">
+                                                <a class="user-nav__language-link" href="#">Text</a>
+                                            </li>
+                                            <li class="user-nav__language-item">
+                                                <a class="user-nav__language-link" href="#">Text</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </label>
                             </div>
-                        </form>
+                            <form class="user-nav__search-inner">
+                                <label>
+                                    <input type="checkbox" id="search-check">
+                                    <div class="user-nav__search-icon"></div>
+                                    <div class="user-nav__search">
+                                        <input class="user-nav__search-input" type="text" placeholder="Search">
+                                        <button class="user-nav__search-btn"></button>
+                                    </div>
+                                </label>
+                            </form>
+                        </div>
                     </div>
                 </div>
                 <div class="header__content">
@@ -130,7 +149,7 @@
                         One app, all things money
                     </h1>
                     <p class="header__content-text">
-                        Open a free account in minutes right your phone, <br>
+                        Open a free account in minutes right your phone,
                         and make your money go further
                     </p>
                 </div>
