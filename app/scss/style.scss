@@ -226,6 +226,7 @@
         line-height: 35px;
         background-color: #fff;
         padding: 0 25px;
+        border: none;
         border-radius: 25px;
         box-shadow: 0 0 10px 2px rgba(34, 60, 80, 0.2);
         transform: translateY(0px);
@@ -415,6 +416,181 @@
     }
 }
 
+.modelReg {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background-color: #fff;
+    overflow: auto;
+    &__inner {
+        background-color: #f3f5f7;
+        background-image: url('../images/bg-model.jpg');
+        background-repeat: no-repeat;
+        background-position: top center;
+        clip-path: url('#my-clip-path');
+        background-size: cover;
+        right: 0;
+        top: 0;
+        width: 35%;
+        height: 100%;
+        position: absolute;
+        z-index: 11;
+        overflow-x: hidden;
+    }
+    &__content {
+        max-width: 720px;
+        margin: 0 auto;
+        padding: 30px 0 20px;
+        z-index: 12;
+        position: relative;
+    }
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+    &__btn-close {
+        font-size: 26px;
+        cursor: pointer;
+        color: $color-blue;
+        border: none;
+        background-color: transparent;
+        &:focus {
+            box-shadow: 0 0 8px 2px rgba(34, 60, 80, 0.2);
+        }
+    }
+}
+
+.active {
+    display: block;
+    position: fixed;
+    z-index: 10;
+}
+
+.form-reg {
+    width: 470px;
+    &__title {
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 35px;
+    }
+    &__input {
+        width: 100%;
+        margin-bottom: 15px;
+        border: none;
+        border-radius: 30px;
+        background-color: #f3f4f6;
+        font-size: 20px;
+        padding: 0 30px;
+        line-height: 58px;
+        height: 58px;
+        color: $color-grey;
+        &::placeholder {
+            font-family: 'Poppins', sans-serif;
+            font-size: 20px;
+            color: $color-grey;
+        }
+    }
+    &__btn {
+        font-size: 18px;
+        color: #fff;
+        padding: 25px 45px;
+        margin-top: 35px;
+        background-color: $color-blue;
+        border: none;
+        border-radius: 45px;
+        transform: translateY(0px);
+        transition: all .3s;
+        cursor: pointer;
+        &:active {
+            transform: translateY(3px);
+        }
+    }
+    &__select {
+        width: 100%;
+        margin-bottom: 15px;
+        border: none;
+        border-radius: 30px;
+        background-color: #f3f4f6;
+        font-size: 20px;
+        padding: 15px 30px;
+        color: $color-grey;
+    }
+}
+
+.select2-container {
+    width: 100% !important;
+    margin-bottom: 15px;
+}
+
+.select2-container .select2-selection--single {
+    height: 58px;
+    padding: 15px 60px 15px 22px;
+    border: none;
+    border-radius: 30px;
+    background-color: #f3f4f6;
+    font-size: 20px;
+    color: $color-grey;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: $color-grey;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 58px;
+    width: 60px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+    border: none;
+    left: 20%;
+    position: relative;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b::after {
+    content: '';
+    border-bottom: 2px solid $color-grey;
+    position: absolute;
+    top: -4px;
+    right: -5px;
+    width: 6px;
+    height: 6px;
+    border-left: 2px solid $color-grey;
+    transform: rotate(-45deg);
+}
+
+.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b::after {
+    transform: rotate(135deg);
+    top: 0px;
+}
+
+.mission {
+    &__inner {
+        padding: 50px 0;
+    }
+    &__title {
+        font-size: 26px;
+        font-weight: 600;
+        color: $color-blue;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 50px;
+    }
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+        width: 980px;
+        margin: 0 auto;
+    }
+    &__list-item
+}
 
 
 @import 'media';
