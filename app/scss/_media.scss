@@ -109,7 +109,6 @@
             margin-bottom: 35px;
         }
         &__input {
-            // margin-bottom: 15px;
             border-radius: 46px;
             font-size: 20px;
             line-height: 70px;
@@ -588,7 +587,6 @@
         &__btn {
             display: block;
             margin: 0 auto;
-            // font-size: 14px;
         }
         &__inner {
             display: flex;
@@ -599,24 +597,6 @@
         &__title {
             font-size: 16px;
         }
-        &__input {
-            // font-size: 14px;
-            // line-height: 44px;
-            // height:. 44px;
-        }
-    }
-    .select2-container .select2-selection--single {
-        // height: 44px;
-        // padding: 8px 60px 8px 22px;
-    }
-
-    .select2-container--default .select2-selection--single .select2-selection__arrow {
-        // height: 44px;
-    }
-    .select2-container--default .select2-selection--single .select2-selection__arrow b::after {
-        // width: 7px;
-        // height: 7px;
-        // top: -6px;
     }
 }
 
