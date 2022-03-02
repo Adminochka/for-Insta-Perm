@@ -23,4 +23,5 @@ $(function (){
 $(".form-reg__select").select2({
     minimumResultsForSearch: Infinity,
     placeholder: 'Country',
+    width: 'resolve',
 });
