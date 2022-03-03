@@ -575,4 +575,133 @@
     top: 0px;
 }
 
+.mission {
+    padding: 116px 0;
+    background-color: $color-white;
+    &__inner {
+        max-width: 1180px;
+        margin: 0 auto;
+        padding: 10px;
+    }
+    &__title {
+        font-size: 35px;
+        line-height: 53px;
+        font-weight: 600;
+        text-align: center;
+        text-transform: uppercase;
+        color: $color-blue;
+        margin-bottom: 94px;
+    }
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 53px 50px;
+    }
+    &__list-item {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: 472px;
+        padding: 50px 48px 81px;
+        border-radius: 17px;
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        background-size: contain;
+        overflow: hidden;
+    }
+    &__list-item:nth-child(4n),
+    &__list-item:nth-child(4n-3) {
+        box-shadow: 0px 0px 10px #0000001A;
+    }
+    &__list-item:nth-child(4n-2),
+    &__list-item:nth-child(4n-1) {
+        background-color: #f3f5f7;
+    }
+    &__item-title {
+        font-size: 30px;
+        line-height: 35px;
+        font-weight: 500;
+        max-width: 371px;
+        min-height: 80px;
+        margin-bottom: 20px;
+        z-index: 5;
+    }
+    &__item-text {
+        position: relative;
+        font-size: 22px;
+        line-height: 28px;
+        max-width: 264px;
+        opacity: 0;
+        z-index: 5;
+        transition: all .2s;
+    }
+    &__list-item:nth-child(4n-2) .mission__item-text,
+    &__list-item:nth-child(4n-1) .mission__item-text {
+        max-width: 100%;
+    }
+    &__item-link {
+        font-size: 18px;
+        line-height: 35px;
+        color: $color-grey;
+        margin-top: auto;
+        opacity: 1;
+        transition: all .2s;
+    }
+    &__item-arrow {
+        position: absolute;
+        left: 25px;
+        bottom: 86px;
+        width: 30px;
+        height: 25px;
+        background-image: url('../images/arrow-right-blue.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+        transform: rotate(180deg);
+        opacity: 0;
+        z-index: 5;
+    }
+    &__item-boxblue {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-color: rgba($color-blue, .79);
+        z-index: 2;
+        opacity: 0;
+        transition: all .2s;
+    }
+    &__list-item:nth-child(4n):hover .mission__item-text,
+    &__list-item:nth-child(4n-3):hover .mission__item-text{
+        color: $color-grey;
+        opacity: 1;
+    }
+    &__list-item:nth-child(4n-2):hover .mission__item-text,
+    &__list-item:nth-child(4n-1):hover .mission__item-text{
+        color: $color-white;
+        opacity: 1;
+    }
+    &__list-item:hover .mission__item-link{
+        opacity: 0;
+    }
+    &__list-item:nth-child(4n):hover .mission__item-arrow,
+    &__list-item:nth-child(4n-3):hover .mission__item-arrow{
+        opacity: 1;
+    }
+    &__list-item:nth-child(4n-2):hover .mission__item-arrow,
+    &__list-item:nth-child(4n-1):hover .mission__item-arrow{
+        background-image: url('../images/arrow-right-white.svg');
+        opacity: 1;
+    }
+    &__list-item:nth-child(4n-2):hover .mission__item-boxblue,
+    &__list-item:nth-child(4n-1):hover .mission__item-boxblue{
+        opacity: 1;
+    }
+    &__list-item:nth-child(4n-2):hover .mission__item-title,
+    &__list-item:nth-child(4n-1):hover .mission__item-title{
+       color: $color-white;
+    }
+}
+
 @import 'media';
