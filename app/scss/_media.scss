@@ -221,7 +221,7 @@
             cursor: pointer;
             transition: all 0ms 300ms;
             position: relative;
-            z-index: 5;
+            z-index: 11;
         }
         &__menu-line {
             display: block;
@@ -264,7 +264,7 @@
             border-bottom-left-radius: 20px;
             transform: translateY(-100%);
             transition: all .5s;
-            z-index: 4;
+            z-index: 10;
         }
         &__content {
             max-width: 515px;
@@ -288,7 +288,7 @@
     }
     .logo {
         position: relative;
-        z-index: 5;
+        z-index: 11;
         width: 150px;
     }
     .menu {
