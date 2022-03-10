@@ -759,6 +759,48 @@
             display: none;
         }
     }
+    .product {
+        padding: 35px 0;
+        &__title {
+            font-size: 25px;
+            line-height: 28px;
+            margin-bottom: 20px;
+        }
+    }
+    .product-slider {
+        .swiper-button-next {
+            // display: block;
+            opacity: 1;
+        }
+        .swiper-button-prev {
+            opacity: 0;
+        }
+        .swiper-button-next {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            left: auto;
+        }
+        .swiper-button-next::after {
+            content: '';
+            width: 30px;
+            height: 25px;
+            background-image: url('../images/arrow-right-blue.svg');
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: contain;
+        }
+        .swiper-pagination-bullet {
+            width: 8px;
+            height: 8px;
+            line-height: 8px;
+            background-color: $color-blue;
+            background-color: #97ABFF;
+        }
+        .swiper-pagination-bullet-active {
+            background-color: $color-blue;
+        }
+    }
 }
 
 @media (max-width: 500px) {

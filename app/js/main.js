@@ -1,5 +1,9 @@
 $(function (){
 
+    new WOW().init();
+
+
+
     const modal = document.getElementById("js-model");
     const btnOpen = document.getElementById("js-model-btn-open");
     const btnClose = document.getElementById("js-model-btn-close");
@@ -17,6 +21,7 @@ $(function (){
             modal.classList.remove('active');
         }
     });
+
 
 });
 
