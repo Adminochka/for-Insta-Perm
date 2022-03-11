@@ -790,6 +790,7 @@
         max-width: 476px;
         mask-image: url('../images/salary-mask.svg');
         mask-size: 100%;
+        mask-repeat: no-repeat;
     }
     &__item:nth-child(2n) .salary__item-img {
         mask-image: url('../images/salary-mask-1.svg');
